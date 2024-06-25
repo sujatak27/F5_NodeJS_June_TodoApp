@@ -1,7 +1,7 @@
-const isEmailRgex = (email) => {
+const isEmailRgex = ({key}) => {
     const isEmail =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i.test(
-        email
+        key
       );
     return isEmail;
   }
